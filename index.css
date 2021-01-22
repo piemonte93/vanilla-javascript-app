@@ -2,6 +2,23 @@ body {
   background-color: #34495e;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 50%;
+  top: 90%;
+  text-align: center;
+}
+
+.js-clock h1 {
+  font-size: 120px;
+  color: white;
+}
+
+.js-toDoForm input {
+  border: none;
+}
 .form,
 .grettings {
   display: none;
