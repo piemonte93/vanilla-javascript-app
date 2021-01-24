@@ -1,6 +1,6 @@
 const body = document.querySelector("body");
 
-const IMG_NUMBER = 5; // 사진 갯수
+const IMG_NUMBER = 9; // 사진 갯수
 
 // function handleImgLoad() {
 //   console.log("finished loading");
