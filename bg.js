@@ -10,7 +10,7 @@ function paintImage(imgNumber) {
   const image = new Image();
   image.src = `https://piemonte93.github.io/vanilla-javascript-app/${
     imgNumber + 1
-  }.jpg`;
+  }.JPG`;
   image.classList.add("bgImage");
   body.prepend(image);
   //   image.addEventListener("loadend", handleImgLoad);
