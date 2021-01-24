@@ -8,9 +8,9 @@ const IMG_NUMBER = 9; // 사진 갯수
 
 function paintImage(imgNumber) {
   const image = new Image();
-  image.src = `/piemonte93/vanilla-javascript-app/blob/master/images/${
+  image.src = `https://github.com/piemonte93/vanilla-javascript-app/blob/master/images/${
     imgNumber + 1
-  }.JPG`;
+  }.JPG?raw=true`;
   image.classList.add("bgImage");
   body.prepend(image);
   //   image.addEventListener("loadend", handleImgLoad);
