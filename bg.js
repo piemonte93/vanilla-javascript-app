@@ -2,9 +2,9 @@ const body = document.querySelector("body");
 
 const IMG_NUMBER = 9; // 사진 갯수
 
-// function handleImgLoad() {
-//   console.log("finished loading");
-// }
+function handleImgLoad() {
+  body.prepend(image);
+}
 
 function paintImage(imgNumber) {
   const image = new Image();
@@ -12,8 +12,7 @@ function paintImage(imgNumber) {
     imgNumber + 1
   }.JPG?raw=true`;
   image.classList.add("bgImage");
-  body.prepend(image);
-  //   image.addEventListener("loadend", handleImgLoad);
+  image.addEventListener("loadend", handleImgLoad);
 }
 
 function genRandom() {
