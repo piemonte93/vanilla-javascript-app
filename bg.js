@@ -8,7 +8,7 @@ const IMG_NUMBER = 9; // 사진 갯수
 
 function paintImage(imgNumber) {
   const image = new Image();
-  image.src = `./${imgNumber + 1}.jpg`;
+  image.src = `/repo/${imgNumber + 1}.jpg`;
   image.classList.add("bgImage");
   body.prepend(image);
   //   image.addEventListener("loadend", handleImgLoad);
