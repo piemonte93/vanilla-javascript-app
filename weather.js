@@ -1,5 +1,5 @@
 const weather = document.querySelector(".js-weather");
-const API_KEY = "API KEY";
+const API_KEY = "6b7a20b4370a1243ebe7125e27078b09";
 const COORDS = "coords";
 
 function getWeather(lat, lng) {
@@ -12,7 +12,7 @@ function getWeather(lat, lng) {
     .then(function (json) {
       const temperature = json.main.temp;
       const place = json.name;
-      weather.innerText = `${temperature} @ ${place}`;
+      weather.innerText = `${temperature}c @ ${place}`;
     });
   //then()은 데이터가 다 들어온 후에 함수를 실행한다.
 }
